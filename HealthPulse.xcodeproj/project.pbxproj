@@ -1,0 +1,536 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A1000000000000000000001 /* HealthPulseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1000000000000000000001 /* HealthPulseApp.swift */; };
+		A1000000000000000000002 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1000000000000000000002 /* AppState.swift */; };
+		A1000000000000000000003 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1000000000000000000003 /* ContentView.swift */; };
+		A1000000000000000000004 /* HealthModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1000000000000000000004 /* HealthModels.swift */; };
+		A1000000000000000000005 /* Medication.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1000000000000000000005 /* Medication.swift */; };
+		A1000000000000000000006 /* JournalEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1000000000000000000006 /* JournalEntry.swift */; };
+		A1000000000000000000007 /* MoodEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1000000000000000000007 /* MoodEntry.swift */; };
+		A1000000000000000000008 /* HealthStoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1000000000000000000008 /* HealthStoreManager.swift */; };
+		A1000000000000000000009 /* InsightsEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1000000000000000000009 /* InsightsEngine.swift */; };
+		A100000000000000000000A /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100000000000000000000A /* NotificationManager.swift */; };
+		A100000000000000000000B /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100000000000000000000B /* CardView.swift */; };
+		A100000000000000000000C /* ProgressRing.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1000000000000000000000C /* ProgressRing.swift */; };
+		A100000000000000000000D /* HealthMetricRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100000000000000000000D /* HealthMetricRow.swift */; };
+		A100000000000000000000E /* SegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100000000000000000000E /* SegmentedControl.swift */; };
+		A100000000000000000000F /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100000000000000000000F /* DashboardView.swift */; };
+		A1000000000000000000010 /* HealthMetricCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1000000000000000000010 /* HealthMetricCard.swift */; };
+		A1000000000000000000011 /* InsightsSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1000000000000000000011 /* InsightsSection.swift */; };
+		A1000000000000000000012 /* HealthDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1000000000000000000012 /* HealthDataView.swift */; };
+		A1000000000000000000013 /* MetricDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1000000000000000000013 /* MetricDetailView.swift */; };
+		A1000000000000000000014 /* SleepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1000000000000000000014 /* SleepView.swift */; };
+		A1000000000000000000015 /* FitnessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1000000000000000000015 /* FitnessView.swift */; };
+		A1000000000000000000016 /* JournalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1000000000000000000016 /* JournalView.swift */; };
+		A1000000000000000000017 /* MindView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1000000000000000000017 /* MindView.swift */; };
+		A1000000000000000000018 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1000000000000000000018 /* SettingsView.swift */; };
+		A1000000000000000000019 /* ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1000000000000000000019 /* ColorExtensions.swift */; };
+		A100000000000000000001A /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100000000000000000001A /* DateExtensions.swift */; };
+		A100000000000000000001B /* PreviewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100000000000000000001B /* PreviewData.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B1000000000000000000001 /* HealthPulseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthPulseApp.swift; sourceTree = "<group>"; };
+		B1000000000000000000002 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		B1000000000000000000003 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B1000000000000000000004 /* HealthModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthModels.swift; sourceTree = "<group>"; };
+		B1000000000000000000005 /* Medication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Medication.swift; sourceTree = "<group>"; };
+		B1000000000000000000006 /* JournalEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalEntry.swift; sourceTree = "<group>"; };
+		B1000000000000000000007 /* MoodEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodEntry.swift; sourceTree = "<group>"; };
+		B1000000000000000000008 /* HealthStoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthStoreManager.swift; sourceTree = "<group>"; };
+		B1000000000000000000009 /* InsightsEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightsEngine.swift; sourceTree = "<group>"; };
+		B100000000000000000000A /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		B100000000000000000000B /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		B100000000000000000000C /* ProgressRing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressRing.swift; sourceTree = "<group>"; };
+		B100000000000000000000D /* HealthMetricRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthMetricRow.swift; sourceTree = "<group>"; };
+		B100000000000000000000E /* SegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedControl.swift; sourceTree = "<group>"; };
+		B100000000000000000000F /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		B1000000000000000000010 /* HealthMetricCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthMetricCard.swift; sourceTree = "<group>"; };
+		B1000000000000000000011 /* InsightsSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightsSection.swift; sourceTree = "<group>"; };
+		B1000000000000000000012 /* HealthDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthDataView.swift; sourceTree = "<group>"; };
+		B1000000000000000000013 /* MetricDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetricDetailView.swift; sourceTree = "<group>"; };
+		B1000000000000000000014 /* SleepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepView.swift; sourceTree = "<group>"; };
+		B1000000000000000000015 /* FitnessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitnessView.swift; sourceTree = "<group>"; };
+		B1000000000000000000016 /* JournalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalView.swift; sourceTree = "<group>"; };
+		B1000000000000000000017 /* MindView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MindView.swift; sourceTree = "<group>"; };
+		B1000000000000000000018 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		B1000000000000000000019 /* ColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtensions.swift; sourceTree = "<group>"; };
+		B100000000000000000001A /* DateExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtensions.swift; sourceTree = "<group>"; };
+		B100000000000000000001B /* PreviewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewData.swift; sourceTree = "<group>"; };
+		B100000000000000000001C /* HealthPulse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HealthPulse.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B100000000000000000001D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B100000000000000000001E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D1000000000000000000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E1000000000000000000001 = {
+			isa = PBXGroup;
+			children = (
+				E1000000000000000000002 /* HealthPulse */,
+				E1000000000000000000003 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E1000000000000000000002 /* HealthPulse */ = {
+			isa = PBXGroup;
+			children = (
+				E1000000000000000000010 /* App */,
+				E1000000000000000000011 /* Models */,
+				E1000000000000000000012 /* Services */,
+				E1000000000000000000013 /* Components */,
+				E1000000000000000000014 /* Features */,
+				E1000000000000000000015 /* Support */,
+				B100000000000000000001D /* Assets.xcassets */,
+				B100000000000000000001E /* Info.plist */,
+			);
+			path = HealthPulse;
+			sourceTree = "<group>";
+		};
+		E1000000000000000000003 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B100000000000000000001C /* HealthPulse.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E1000000000000000000010 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				B1000000000000000000001 /* HealthPulseApp.swift */,
+				B1000000000000000000002 /* AppState.swift */,
+				B1000000000000000000003 /* ContentView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		E1000000000000000000011 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B1000000000000000000004 /* HealthModels.swift */,
+				B1000000000000000000005 /* Medication.swift */,
+				B1000000000000000000006 /* JournalEntry.swift */,
+				B1000000000000000000007 /* MoodEntry.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E1000000000000000000012 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B1000000000000000000008 /* HealthStoreManager.swift */,
+				B1000000000000000000009 /* InsightsEngine.swift */,
+				B100000000000000000000A /* NotificationManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		E1000000000000000000013 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				B100000000000000000000B /* CardView.swift */,
+				B100000000000000000000C /* ProgressRing.swift */,
+				B100000000000000000000D /* HealthMetricRow.swift */,
+				B100000000000000000000E /* SegmentedControl.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		E1000000000000000000014 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				E1000000000000000000020 /* Dashboard */,
+				E1000000000000000000021 /* HealthData */,
+				E1000000000000000000022 /* Sleep */,
+				E1000000000000000000023 /* Fitness */,
+				E1000000000000000000024 /* Journal */,
+				E1000000000000000000025 /* Mind */,
+				E1000000000000000000026 /* Settings */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		E1000000000000000000015 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				B1000000000000000000019 /* ColorExtensions.swift */,
+				B100000000000000000001A /* DateExtensions.swift */,
+				B100000000000000000001B /* PreviewData.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		E1000000000000000000020 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				B100000000000000000000F /* DashboardView.swift */,
+				B1000000000000000000010 /* HealthMetricCard.swift */,
+				B1000000000000000000011 /* InsightsSection.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		E1000000000000000000021 /* HealthData */ = {
+			isa = PBXGroup;
+			children = (
+				B1000000000000000000012 /* HealthDataView.swift */,
+				B1000000000000000000013 /* MetricDetailView.swift */,
+			);
+			path = HealthData;
+			sourceTree = "<group>";
+		};
+		E1000000000000000000022 /* Sleep */ = {
+			isa = PBXGroup;
+			children = (
+				B1000000000000000000014 /* SleepView.swift */,
+			);
+			path = Sleep;
+			sourceTree = "<group>";
+		};
+		E1000000000000000000023 /* Fitness */ = {
+			isa = PBXGroup;
+			children = (
+				B1000000000000000000015 /* FitnessView.swift */,
+			);
+			path = Fitness;
+			sourceTree = "<group>";
+		};
+		E1000000000000000000024 /* Journal */ = {
+			isa = PBXGroup;
+			children = (
+				B1000000000000000000016 /* JournalView.swift */,
+			);
+			path = Journal;
+			sourceTree = "<group>";
+		};
+		E1000000000000000000025 /* Mind */ = {
+			isa = PBXGroup;
+			children = (
+				B1000000000000000000017 /* MindView.swift */,
+			);
+			path = Mind;
+			sourceTree = "<group>";
+		};
+		E1000000000000000000026 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				B1000000000000000000018 /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F1000000000000000000001 /* HealthPulse */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1000000000000000000002 /* Build configuration list for PBXNativeTarget "HealthPulse" */;
+			buildPhases = (
+				F1000000000000000000003 /* Sources */,
+				D1000000000000000000001 /* Frameworks */,
+				F1000000000000000000004 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HealthPulse;
+			productName = HealthPulse;
+			productReference = B100000000000000000001C /* HealthPulse.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F1000000000000000000005 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					F1000000000000000000001 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = F1000000000000000000006 /* Build configuration list for PBXProject "HealthPulse" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E1000000000000000000001;
+			productRefGroup = E1000000000000000000003 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F1000000000000000000001 /* HealthPulse */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F1000000000000000000004 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F1000000000000000000003 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1000000000000000000001 /* HealthPulseApp.swift in Sources */,
+				A1000000000000000000002 /* AppState.swift in Sources */,
+				A1000000000000000000003 /* ContentView.swift in Sources */,
+				A1000000000000000000004 /* HealthModels.swift in Sources */,
+				A1000000000000000000005 /* Medication.swift in Sources */,
+				A1000000000000000000006 /* JournalEntry.swift in Sources */,
+				A1000000000000000000007 /* MoodEntry.swift in Sources */,
+				A1000000000000000000008 /* HealthStoreManager.swift in Sources */,
+				A1000000000000000000009 /* InsightsEngine.swift in Sources */,
+				A100000000000000000000A /* NotificationManager.swift in Sources */,
+				A100000000000000000000B /* CardView.swift in Sources */,
+				A100000000000000000000C /* ProgressRing.swift in Sources */,
+				A100000000000000000000D /* HealthMetricRow.swift in Sources */,
+				A100000000000000000000E /* SegmentedControl.swift in Sources */,
+				A100000000000000000000F /* DashboardView.swift in Sources */,
+				A1000000000000000000010 /* HealthMetricCard.swift in Sources */,
+				A1000000000000000000011 /* InsightsSection.swift in Sources */,
+				A1000000000000000000012 /* HealthDataView.swift in Sources */,
+				A1000000000000000000013 /* MetricDetailView.swift in Sources */,
+				A1000000000000000000014 /* SleepView.swift in Sources */,
+				A1000000000000000000015 /* FitnessView.swift in Sources */,
+				A1000000000000000000016 /* JournalView.swift in Sources */,
+				A1000000000000000000017 /* MindView.swift in Sources */,
+				A1000000000000000000018 /* SettingsView.swift in Sources */,
+				A1000000000000000000019 /* ColorExtensions.swift in Sources */,
+				A100000000000000000001A /* DateExtensions.swift in Sources */,
+				A100000000000000000001B /* PreviewData.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F1000000000000000000010 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F1000000000000000000011 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F1000000000000000000012 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = HealthPulse/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.healthpulse.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F1000000000000000000013 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = HealthPulse/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.healthpulse.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F1000000000000000000006 /* Build configuration list for PBXProject "HealthPulse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1000000000000000000010 /* Debug */,
+				F1000000000000000000011 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1000000000000000000002 /* Build configuration list for PBXNativeTarget "HealthPulse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1000000000000000000012 /* Debug */,
+				F1000000000000000000013 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F1000000000000000000005 /* Project object */;
+}
