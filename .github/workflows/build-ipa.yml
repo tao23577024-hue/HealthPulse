@@ -1,0 +1,90 @@
+name: Build IPA
+
+on:
+  push:
+    branches: [ main, master ]
+  workflow_dispatch:
+    inputs:
+      configuration:
+        description: 'Build configuration'
+        required: true
+        default: 'Release'
+        type: choice
+        options:
+          - Release
+          - Debug
+
+jobs:
+  build:
+    name: Build HealthPulse IPA
+    runs-on: macos-14
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Select Xcode
+        run: |
+          sudo xcode-select -switch /Applications/Xcode_15.4.app
+          xcodebuild -version
+
+      - name: Install ldid (pseudo-signing)
+        run: |
+          brew install ldid || echo "ldid install failed"
+          which ldid || echo "ldid not found"
+
+      - name: Archive (unsigned)
+        run: |
+          cd HealthPulse
+          xcodebuild archive \
+            -project HealthPulse.xcodeproj \
+            -scheme HealthPulse \
+            -configuration Release \
+            -destination 'generic/platform=iOS' \
+            -archivePath ../build/HealthPulse.xcarchive \
+            CODE_SIGNING_ALLOWED=NO \
+            CODE_SIGNING_REQUIRED=NO \
+            CODE_SIGN_IDENTITY="" \
+            CODE_SIGN_ENTITLEMENTS="" \
+            DEVELOPMENT_TEAM="" \
+            PROVISIONING_PROFILE_SPECIFIER="" \
+            ONLY_ACTIVE_ARCH=NO \
+            ENABLE_BITCODE=NO
+
+      - name: Pseudo-sign with ldid
+        run: |
+          APP_PATH=$(find build/HealthPulse.xcarchive/Products/Applications -name "*.app" -type d | head -1)
+          APP_NAME=$(basename "$APP_PATH" .app)
+          BINARY_PATH="$APP_PATH/$APP_NAME"
+          if command -v ldid &> /dev/null && [ -f "$BINARY_PATH" ]; then
+            ldid -S "$BINARY_PATH"
+            echo "Pseudo-signing complete"
+          else
+            echo "Skipping pseudo-signing (fine for TrollStore)"
+          fi
+
+      - name: Package IPA
+        run: |
+          APP_PATH=$(find build/HealthPulse.xcarchive/Products/Applications -name "*.app" -type d | head -1)
+          mkdir -p build/ipa/Payload
+          cp -R "$APP_PATH" "build/ipa/Payload/"
+          cat > build/ipa/iTunesMetadata.plist << 'EOF'
+          <?xml version="1.0" encoding="UTF-8"?>
+          <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+          <plist version="1.0"><dict>
+          <key>bundleDisplayName</key><string>健康脉搏</string>
+          <key>softwareVersionBundleId</key><string>com.healthpulse.app</string>
+          </dict></plist>
+          EOF
+          cd build/ipa
+          zip -qr "../HealthPulse-unsigned.ipa" Payload iTunesMetadata.plist
+          cd ../..
+          ls -lh build/HealthPulse-unsigned.ipa
+
+      - name: Upload IPA artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: HealthPulse-IPA
+          path: build/HealthPulse-unsigned.ipa
+          retention-days: 30
