@@ -36,7 +36,10 @@ jobs:
 
       - name: Archive (unsigned)
         run: |
-          cd HealthPulse
+            - name: Archive (unsigned)
+        run: |
+          xcodebuild archive \
+
           xcodebuild archive \
             -project HealthPulse.xcodeproj \
             -scheme HealthPulse \
